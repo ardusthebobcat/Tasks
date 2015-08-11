@@ -1,0 +1,15 @@
+<h1>To Do List Machine</h1>
+<form action="/task" method="post">
+  <div class="form-group">
+    <label for "task">Enter in a task you need to complete today and then click 'Save Task' to save it into your to-do list!<br></label>
+    <input id="task_input" name="task_input" class="form control" type="text" placeholder="Enter in your task here.">
+  </div>
+  <br>
+  <button type="submit" class="btn-success">Save Task</button>
+</form>
+<br><br><br>
+<ul>
+  <% @tasks.each() do |task| %>
+  <li><%= task.description() %></li>
+  <% end %>
+</ul>
