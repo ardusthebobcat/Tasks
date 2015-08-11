@@ -1,5 +1,5 @@
 require('rspec')
-require('task')
+require('to_do')
 
 describe(Task) do
   describe("#description") do
